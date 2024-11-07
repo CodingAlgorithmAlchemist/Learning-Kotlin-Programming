@@ -1,6 +1,8 @@
 fun main(){
     /*
     Kotlin Variables Variables are containers for storing data values.
+    Variables can be declared outside the main() function at the beginning of your program. Variables declared in this way are said to be declared at top level.
+    its recommend that you declare all variables as read-only (val) by default. Declare mutable variables (var) only if necessary.
     To create a variable, use var or val, and assign a value to it with the equal sign (=):
     var variableName = value
     val variableName = value
@@ -8,6 +10,10 @@ fun main(){
     When you create a variable with the val keyword, the value cannot be changed/reassigned
     You can also use the + character to add a variable to another variable
     For numeric values, the + character works as a mathematical operator
+
+    String template
+    It's useful to know how to print the contents of variables to standard output. You can do this with string templates. You can use template expressions to access data stored in variables and other objects, and convert them into strings. A string value is a sequence of characters in double quotes ". Template expressions always start with a dollar sign $.
+    To evaluate a piece of code in a template expression, place the code within curly braces {} after the dollar sign $.
 
     Variable Names
     A variable can have a short name (like x and y) or more descriptive names (age, sum, totalVolume).
@@ -43,4 +49,17 @@ fun main(){
     println(myLetter)
     println(myDoubleNum)
     println(myNum)
+
+
+    // Variable declared without initialization
+    val d: Int
+// Variable initialized
+    d = 3
+
+// Variable explicitly typed and initialized
+    val e: String = "hello"
+
+// Variables can be read because they have been initialized
+    println(d) // 3
+    println(e) // hello
 }
