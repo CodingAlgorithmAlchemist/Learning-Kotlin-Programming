@@ -1,4 +1,4 @@
-package Variable.Exercises
+package Variable
 
 fun main(){
     /*
